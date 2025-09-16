@@ -10,6 +10,8 @@ function isMobile() {
 }
 
 toggleBtn.addEventListener('click', async () => {
+    const h1 = document.querySelector('.profile h1');
+    const p = document.querySelector('.profile p');
     if (!isPlaying) {
         seizureVideoLeft.style.display = 'block';
         seizureVideoRight.style.display = 'block';
@@ -17,6 +19,8 @@ toggleBtn.addEventListener('click', async () => {
         seizureVideoRight.currentTime = 0;
         await Promise.all([seizureVideoLeft.play(), seizureVideoRight.play()]);
         toggleBtn.textContent = 'MAKE IT STOP';
+        h1.textContent = 'Good morning';
+        p.textContent = 'Long time no see!';
         if (isMobile()) {
             avatar.classList.add('hide-avatar-mobile');
         }
@@ -26,6 +30,8 @@ toggleBtn.addEventListener('click', async () => {
         seizureVideoLeft.style.display = 'none';
         seizureVideoRight.style.display = 'none';
         toggleBtn.textContent = 'SEIZURE ALERT';
+        h1.textContent = 'Ohayo!';
+        p.textContent = 'Hisashiburi Dana';
         avatar.classList.remove('hide-avatar-mobile');
     }
     isPlaying = !isPlaying;
