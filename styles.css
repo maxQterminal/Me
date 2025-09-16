@@ -147,7 +147,7 @@ h1 {
         font-size: 1rem;
     }
 }
-/* Hide avatar in mobile view when video is playing */
+/* Hide avatar in mobile view */
 .hide-avatar-mobile {
     display: none !important;
 }
