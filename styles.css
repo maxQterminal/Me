@@ -5,7 +5,8 @@ html, body {
     box-sizing: border-box;
     font-family: 'Segoe UI', Arial, sans-serif;
     background: #181828;
-    color: #f5f5f5;
+    color: #e69999;
+    font-style: italic;
 }
 
 body {
@@ -85,13 +86,12 @@ h1 {
     font-weight: 700;
     letter-spacing: 2px;
     text-align: center;
-}
 
-p {
     margin: 0 0 18px 0;
     font-size: 1.1rem;
     color: #ff007f;
     text-align: center;
+    font-style: italic;
 }
 
 .social-icons {
@@ -151,7 +151,6 @@ p {
 .hide-avatar-mobile {
     display: none !important;
 }
-
 
 @media (max-width: 600px) {
     .video-bg-row {
