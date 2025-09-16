@@ -152,6 +152,7 @@ p {
     display: none !important;
 }
 
+
 @media (max-width: 600px) {
     .video-bg-row {
         flex-direction: column;
