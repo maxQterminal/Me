@@ -84,19 +84,16 @@ body {
 h1 {
     margin: 0 0 20px 0;
     font-size: 2.2rem;
-    color: #ff007f;
     font-weight: 700;
     letter-spacing: 2px;
     text-align: center;
-    font-style: italic;
 }
 
 p {
     margin: 0 0 18px 0;
     font-size: 1.1rem;
-    color: #cb9ab3;
+    color: #ff007f;
     text-align: center;
-    font-style: italic;
 }
 
 .social-icons {
