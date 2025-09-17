@@ -15,8 +15,8 @@ toggleBtn.addEventListener('click', async () => {
     const p = document.querySelector('.profile p');
     if (!isPlaying) {
         // Use visibility for smoother transition
-        seizureVideoLeft.style.visibility = 'visible';
-        seizureVideoRight.style.visibility = 'visible';
+        seizureVideoLeft.style.display = 'block';
+        seizureVideoRight.style.display = 'block';
         seizureVideoLeft.currentTime = 0;
         seizureVideoRight.currentTime = 0;
         // Preload videos for smoother playback
@@ -40,8 +40,8 @@ toggleBtn.addEventListener('click', async () => {
     } else {
         seizureVideoLeft.pause();
         seizureVideoRight.pause();
-        seizureVideoLeft.style.visibility = 'hidden';
-        seizureVideoRight.style.visibility = 'hidden';
+        seizureVideoLeft.style.display = 'none';
+        seizureVideoRight.style.display = 'none';
         toggleBtn.textContent = 'SEIZURE ALERT';
         h1.textContent = 'Ohayo!';
         p.textContent = 'Hisashiburi Dana';
