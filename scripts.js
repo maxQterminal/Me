@@ -7,6 +7,7 @@ const subtext = document.querySelector('p');
 
 let isPlaying = false;
 
+
 function isMobile() {
     return window.innerWidth <= 600;
 }
